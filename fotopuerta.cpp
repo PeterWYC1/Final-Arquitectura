@@ -48,7 +48,7 @@ void loop() {
     // Calcular velocidad y aceleración
     velocidad = distancia / (tiempoDeteccion / 1000.0); // m/s
     aceleracion = velocidad / (tiempoDeteccion / 1000.0); // m/s^2
-    aceleracion2 = (2 * (distancia))/((tiempoDeteccion*tiempoDeteccion)*1000.0);
+    // aceleracion2 = (2 * (distancia))/((tiempoDeteccion*tiempoDeteccion)*1000.0);
     // Imprimir resultados en el monitor serie
     
     Serial.print("Tiempo de deteccion: ");
@@ -58,12 +58,7 @@ void loop() {
     Serial.print(" m/s, Aceleración: ");
     // Serial.print(aceleracion);
     Serial.print(aceleracion);
-    Serial.println(" m/s^2");
-    Serial.print("Aceleración 2: ");
-    // Serial.print(aceleracion);
-    Serial.print(aceleracion2);
-
-  
+    Serial.println(" m/s^2");  
   }
 //  Serial.print(valorFoto1); 
 // Serial.println(valorFoto2);
